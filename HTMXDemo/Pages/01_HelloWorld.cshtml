@@ -1,0 +1,14 @@
+﻿@page
+@model HTMXDemo.Pages._01_HelloWorldModel
+@{
+    ViewBag.Title = "Hello World";
+    ViewBag.Home = true;
+}
+
+<div class="card m-5 p-5 ms-0 text-center">
+    <h2 class="fs-1 mb-4" id="target">Change Me!</h2>
+
+    <button class="btn btn-primary btn-lg px-4" hx-get="" hx-target="#target">
+        Clik Me
+    </button>
+</div>

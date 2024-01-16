@@ -1,0 +1,23 @@
+﻿@page 
+@model HTMXDemo.Pages._02_CounterModel
+@{
+    ViewBag.Title = "Counters";
+}
+
+<div class="card p-5 mb-4">
+    <div class="d-flex justify-content-between">
+        <div>
+            <button class="btn btn-primary"
+                    hx-post=""
+                    hx-target="#example_one_count">
+                Increment
+            </button>
+        </div>
+        <div>
+            <h2 id="example_one_count" class="fs-2" style="text-align: right">
+                <span>0</span>
+            </h2>
+        </div>
+    </div>
+</div>
+
